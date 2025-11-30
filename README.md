@@ -166,7 +166,6 @@ java -jar target/test-0.0.1-SNAPSHOT.jar
 
 ### 2. Ejecución con Docker
 
-#### Opción A: Comandos manuales
 
 ```bash
 # 1. Construir imagen de la API
