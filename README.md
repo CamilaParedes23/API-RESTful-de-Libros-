@@ -186,16 +186,9 @@ docker run --name libros-api-container \
   libros-api:latest
 ```
 
-#### Opción B: Script automatizado
-
-```bash
-# Usar el script interactivo
-./docker-scripts.bat
-```
 
 **URLs disponibles:**
 - API: http://localhost:8080/api/v1/libros
-- Documentación: http://localhost:8080/swagger-ui.html
 - Health Check: http://localhost:8080/actuator/health
 
 ### 3. Limpieza de Contenedores
@@ -267,11 +260,11 @@ spring.datasource.password=abcd
 
 #### application-docker.properties (Docker)
 ```properties
-spring.application.name=libros-api
 server.port=8080
 spring.datasource.url=jdbc:mysql://mysql-db:3306/librosdb
 spring.datasource.username=root
 spring.datasource.password=rootpassword
+
 ```
 
 ### Estructura del Proyecto
@@ -301,8 +294,6 @@ src/
 │       └── application-docker.properties
 ├── Dockerfile
 ├── .dockerignore
-├── docker-scripts.bat
-└── run-local.bat
 ```
 
 ## Monitoreo y Observabilidad
